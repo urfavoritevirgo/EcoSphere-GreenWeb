@@ -3,9 +3,9 @@ const welcomeMessage = document.getElementById('welcome-message');
 if (welcomeMessage) {
   const hours = new Date().getHours();
   const greetings = [
-    'Magandang Umaga! Welcome sa GreenWeb:EcoSphere', // Morning
-    'Magandang Hapon! Welcome sa GreenWeb:EcoSphere', // Afternoon
-    'Magandang Gabi! Welcome sa GreenWeb:Ecosphere',  // Evening
+    'Magandang Umaga! Welcome sa EcoSphere', // Morning
+    'Magandang Hapon! Welcome sa EcoSphere', // Afternoon
+    'Magandang Gabi! Welcome sa Ecosphere',  // Evening
   ];
   const greetingIndex = (hours < 12) ? 0 : (hours < 18) ? 1 : 2;
   welcomeMessage.textContent = greetings[greetingIndex];
